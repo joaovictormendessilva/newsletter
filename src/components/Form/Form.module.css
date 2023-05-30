@@ -1,0 +1,50 @@
+.form .formControl{
+    display: flex;
+    flex-direction: column;
+}
+
+.form .formLabels{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form .formLabels .warningLabel{
+    color: #ff6a3a;
+}
+
+.form .formControl label{
+    font-size: 0.725rem;
+    color: var(--dark-slate-grey);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+
+.form .formControl input{
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: solid 1px var(--grey);
+    margin-bottom: 1rem;
+    outline: none;
+    color: var(--dark-slate-grey);
+    font-size: 1rem;
+}
+
+.form .formControl input:focus{
+    border: solid 1px var(--dark-slate-grey);
+}
+
+.form input[type="submit"]{
+    padding: 15px;
+    border-radius: 8px;
+    border: solid 1px var(--grey);
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+.form input[type="submit"]:hover{
+    background-image: linear-gradient(to right, #ff527b, #ff6a3a);
+    box-shadow: rgb(255 106 58 / 45%) 0px 10px 25px -5px;
+}

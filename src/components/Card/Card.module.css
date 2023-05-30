@@ -1,28 +1,40 @@
 .card{
-    width: 650px;
-
+    width: 820px;
     background-color: var(--white);
 
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 57% 43%;
 
     padding: 0.725rem;
     border-radius: 8px;
 }
 
 .card .infoAndForm{
-    padding: 50px 20px;
+    padding: 50px 40px;
 }
 
 .card .infoAndForm h1{
-    text-align: center;
     font-size: 56px;
+    margin-bottom: 1.6rem;
 }
 
 .card .infoAndForm p{
-    text-align: justify;
+    margin-bottom: 1.6rem;
+    color: var(--dark-slate-grey);
 }
 
 .card .list{
     list-style: none;
+    margin-bottom: 1.6rem;
+}
+
+.card .list li{
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.card .list li img{
+    width: 24px;
 }

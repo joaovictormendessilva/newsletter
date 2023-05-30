@@ -28,3 +28,10 @@ input[type="submit"]{
     color: var(--white);
     border: none;
 }
+
+.warningValidation{
+    transition: 0.1s;
+    background-color: #ff6a3a61 !important;
+    color: #ff6a3a !important;
+    border-color: #ff6a3a !important;
+}
