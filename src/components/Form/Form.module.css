@@ -21,7 +21,7 @@
 
 
 .form .formControl input{
-    padding: 15px 20px;
+    padding: 0.938rem 1.25rem;
     border-radius: 8px;
     border: solid 1px var(--grey);
     margin-bottom: 1rem;
@@ -35,7 +35,7 @@
 }
 
 .form input[type="submit"]{
-    padding: 15px;
+    padding: 0.938rem;
     border-radius: 8px;
     border: solid 1px var(--grey);
     width: 100%;

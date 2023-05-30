@@ -1,13 +1,13 @@
 .successSubmitCard{
     background-color: var(--white);
-    padding: 35px;
-    width: 400px;
+    padding: 2.188rem;
+    width: 25rem;
 
-    border-radius: 30px;
+    border-radius: 1.875rem;
 }
 
 .successSubmitCard h2{
-    font-size: 56px;
+    font-size: 3.5rem;
     line-height: 1;
     margin-top: 1.6rem;
 }

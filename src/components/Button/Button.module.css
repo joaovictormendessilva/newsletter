@@ -1,5 +1,5 @@
 input[type="submit"]{
-    padding: 15px;
+    padding: 0.938rem;
     border-radius: 8px;
     border: solid 1px var(--grey);
     width: 100%;
