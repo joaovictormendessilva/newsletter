@@ -3,18 +3,24 @@ import styles from './App.module.css';
 import { Card } from './components/Card/Card';
 import { SuccessSubmitCard } from './components/SuccessSubmitCard/SuccessSubmitCard';
 
-type setSuccessSubmit = React.Dispatch<React.SetStateAction<boolean>>
 
-export const FormContext = createContext<setSuccessSubmit | null>(null)
+interface IFormContext{
+  setSuccessSubmit: React.Dispatch<React.SetStateAction<boolean>>
+  email: string
+  setEmail: React.Dispatch<React.SetStateAction<string>>
+}
+
+export const FormContext = createContext<IFormContext | null>(null)
 
 export function App() {
 
   const [successSubmit, setSuccessSubmit] = useState<boolean>(false)
+  const [email, setEmail] = useState<string>("")
 
   return (
     <div className={styles.app}>
       
-      <FormContext.Provider value={setSuccessSubmit}>
+      <FormContext.Provider value={{setSuccessSubmit, email, setEmail}}>
         {successSubmit ? <SuccessSubmitCard /> : <Card />}
       </FormContext.Provider>
 

@@ -9,10 +9,11 @@ import { Button } from '../Button/Button';
 
 export function Form() {
 
-    const [email, setEmail] = useState<string>("");
     const [error, setError] = useState<boolean>(false);
 
-    const setSuccessSubmit = useContext(FormContext)
+    const formContext = useContext(FormContext);
+    if (!formContext) return null;
+    const { setSuccessSubmit, email, setEmail } = formContext
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
@@ -27,7 +28,8 @@ export function Form() {
         else if (check) {
             setError(false)
             emailInput?.classList.remove("warningValidation")
-            setSuccessSubmit?.(true)
+            setSuccessSubmit(true);
+
         }
         else{
             setError(true)
@@ -55,7 +57,6 @@ export function Form() {
             </div>
             
             <Button content="Subscribe to monthly newsletter"/>
-            {/* <input type="submit" value="Subscribe to monthly newsletter"/> */}
         </form>
     )
 }

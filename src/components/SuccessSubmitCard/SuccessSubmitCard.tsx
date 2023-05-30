@@ -7,7 +7,16 @@ import successIcon from '../../assets/img/icon-success.svg';
 // Components
 import { Button } from '../Button/Button';
 
+// Context API
+import { useContext } from 'react';
+import { FormContext } from '../../App';
+
 export function SuccessSubmitCard(){
+
+    const formContext = useContext(FormContext)
+    if (!formContext) return null;
+    const { email } = formContext
+
     return(
         <div className={styles.successSubmitCard}>
             <img 
@@ -15,7 +24,7 @@ export function SuccessSubmitCard(){
                 alt="Ícone de sucesso" 
             />
             <h2>Thanks for subscribing!</h2>
-            <p>A confirmation email has been sent to <b>email@email.com</b>. Please open it and click the button inside to confirm your subscription.</p>
+            <p>A confirmation email has been sent to <b>{email}</b>. Please open it and click the button inside to confirm your subscription.</p>
 
             <Button content='Dismiss message'/>
         </div>

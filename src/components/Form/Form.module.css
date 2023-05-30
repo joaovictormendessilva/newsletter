@@ -34,17 +34,3 @@
     border: solid 1px var(--dark-slate-grey);
 }
 
-.form input[type="submit"]{
-    padding: 0.938rem;
-    border-radius: 8px;
-    border: solid 1px var(--grey);
-    width: 100%;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
-}
-
-.form input[type="submit"]:hover{
-    background-image: linear-gradient(to right, #ff527b, #ff6a3a);
-    box-shadow: rgb(255 106 58 / 45%) 0px 10px 25px -5px;
-}
