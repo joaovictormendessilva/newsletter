@@ -8,6 +8,8 @@ import successIcon from '../../assets/img/icon-success.svg'
 import { Illustration } from '../Illustration/Illustration';
 import { Form } from '../Form/Form';
 
+
+
 export function Card(){
     return(
         <div className={styles.card}>

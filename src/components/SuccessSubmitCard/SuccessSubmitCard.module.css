@@ -1,0 +1,19 @@
+.successSubmitCard{
+    background-color: var(--white);
+    padding: 35px;
+    width: 400px;
+
+    border-radius: 30px;
+}
+
+.successSubmitCard h2{
+    font-size: 56px;
+    line-height: 1;
+    margin-top: 1.6rem;
+}
+
+.successSubmitCard p{
+    color: var(--dark-slate-grey);
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+}
