@@ -6,3 +6,9 @@
 
     background-color: var(--charcoal-grey);
 }
+
+@media (max-width: 540px) {
+    .app{
+        height: auto;
+    }
+}
