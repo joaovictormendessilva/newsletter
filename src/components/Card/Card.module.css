@@ -39,3 +39,9 @@
     width: 1.5rem;
 }
 
+@media (max-width: 540px) {
+    .card{
+        display: flex;
+        flex-direction:column-reverse;
+    }
+}
