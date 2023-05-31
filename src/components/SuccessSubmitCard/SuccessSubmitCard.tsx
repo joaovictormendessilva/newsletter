@@ -15,7 +15,17 @@ export function SuccessSubmitCard(){
 
     const formContext = useContext(FormContext)
     if (!formContext) return null;
-    const { email } = formContext
+    const { email, setSuccessSubmit, setEmail } = formContext
+    
+    const dimissMessage = () => {
+        setSuccessSubmit((prev) => {
+            return prev = !prev
+        })
+
+        setEmail("");
+
+        console.log("Entrou")
+    }
 
     return(
         <div className={styles.successSubmitCard}>
@@ -26,7 +36,7 @@ export function SuccessSubmitCard(){
             <h2>Thanks for subscribing!</h2>
             <p>A confirmation email has been sent to <b>{email}</b>. Please open it and click the button inside to confirm your subscription.</p>
 
-            <Button content='Dismiss message'/>
+            <Button content='Dismiss message' onDimissMessage={dimissMessage}/>
         </div>
     )
 }

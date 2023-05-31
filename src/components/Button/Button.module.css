@@ -8,7 +8,7 @@ input[type="submit"]{
     border: none;
 }
 
-input[type="submit"]:hover{
+input[type="submit"]:active{
     background-image: linear-gradient(to right, #ff527b, #ff6a3a);
     box-shadow: rgb(255 106 58 / 45%) 0px 10px 25px -5px;
 }
